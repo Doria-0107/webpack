@@ -5,3 +5,7 @@
  ```
 
  2.下载webpack包 ，注意 webpack 4.0 及以上的版本需要结合webpack-cli 一起使用
+  ```
+  npm i webpack webpack-cli -g //全局安装，如果已经安装过会更新到最新的版本
+  npm i webpack webpack-cli -D //本地安装一次 -D 是-save-dev 缩写
+ ```
