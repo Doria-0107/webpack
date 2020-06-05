@@ -1,7 +1,6 @@
 {
-  "name": "webpack",
+  "name": "webpack_test",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,10 @@
   "bugs": {
     "url": "https://github.com/Doria-0107/webpack/issues"
   },
-  "homepage": "https://github.com/Doria-0107/webpack#readme"
+  "homepage": "https://github.com/Doria-0107/webpack#readme",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
