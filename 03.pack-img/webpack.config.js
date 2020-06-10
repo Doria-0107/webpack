@@ -19,6 +19,7 @@ module.exports = {
             //处理css 资源
             {
                 test: /\.css$/,
+                //需要使用多个loader时 用use,只使用一个loader时用loader 
                 use: ['style-loader', 'css-loader']
             },
             //处理图片资源，只能处理css/less中的，不能处理HTML中的
@@ -36,7 +37,7 @@ module.exports = {
                     name:'[hash:10].[ext]'
                 }
             },
-            //处理HTML文件中的img
+            //处理HTML文件中的img （负责引入img，从而能被url-loader进行处理）
             {
                 test:/\.html$/,
                 loader:'html-loader'
