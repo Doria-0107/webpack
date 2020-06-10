@@ -18,8 +18,8 @@ module.exports = {
         rules: [
             //处理css 资源
             {
-                test: /\.less$/,
-                use: ['style-loader', 'css-loader','less-loader']
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             },
             //处理图片资源，只能处理css/less中的，不能处理HTML中的
             {
@@ -35,6 +35,11 @@ module.exports = {
                     //name:给图片从命名  [hash:10]：取图片hash的前10位  [ext]：取文件的原扩展名
                     name:'[hash:10].[ext]'
                 }
+            },
+            //处理HTML文件中的img
+            {
+                test:/\.html$/,
+                loader:'html-loader'
             }
         ]
     },
